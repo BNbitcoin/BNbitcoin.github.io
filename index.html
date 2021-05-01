@@ -313,8 +313,8 @@
 <br>4c) contract=<strong>0xE7Cb24F449973D5B3520E5b93D88B405903c75Fb</strong>
 <br>  * This is the BNBTC smart contract address on BSC. Do not alter it (the software is case-sensitive).
 <br>
-<br>4d) gasToMine=10
-<br>  * Replace the value with the amount of gas you prefer to mint a block with (decimals allowed, no alphabets).
+<br>4d) gasToMine=5
+<br>  * Replace the value with the amount of gas you prefer to mint a block with, use 5 at least (decimals allowed, no alphabets).
 <br>
 <br>4e) gasApiURL=
 <br>  
@@ -353,8 +353,8 @@
                                     <p class="mbr-fonts-style panel-text display-7">This mining software is a command line tool which allows both CPU and GPU mining with a few simple prompt commands.<br><br><strong>NOTICE:</strong> from preliminary tests on BNBTC, an <a href="https://github.com/azlehria/0xbitcoin-gpuminer/releases/download/v2.10.0-pre4/0xbtcminer-win_2.10.0-pre4.zip" class="text-danger" target="_blank">earlier version</a> is suggested in this moment for solo-mining.<br>The following sequence of prompt commands (CMD.exe shell) is an example for solo-mining with a Nvidia GPU within a Windows environment:<br><br>&gt;<em><strong>.\0xbitcoin-miner.exe</strong></em><br>[this commands opens the mining software instance, but it does not start mining: the following commands need to be entered for the mining setup]<br><br>&gt;<em><strong>help</strong></em><br>[this commands shows the available options and other commands of the mining software]<br><br>&gt;<em><strong>account new
 </strong></em><br>[it creates a new account, which is empty, and you must fill with BNB to submit solutions to the contract. You'll be provided also the private key of the account. You can also mine with the empty account, without BNB funds, but the found solutions won't be submitted to the BNbitcoin smart contract]<br><br>&gt; <em><strong>account list</strong></em><br>
 [a list of available accounts, including the account created above]<br><br>&gt;<em><strong>config list</strong></em><br>
-[this command shows the current configuration setup]<br><br>&gt;<em><strong>config gasprice 10</strong></em>
-<br>[this command sets the gasPrice to 10 BNB-Gwei]<br><br>&gt;<em><strong>config web3provider https://bsc-dataseed.binance.org</strong></em><br>[this command is required to link the miner to the Binance Smart Chain]<br>&nbsp;<br>&gt;<em><strong>contract select 0xE7Cb24F449973D5B3520E5b93D88B405903c75Fb</strong></em><br>
+[this command shows the current configuration setup]<br><br>&gt;<em><strong>config gasprice 5</strong></em>
+<br>[this command sets the gasPrice to 5 BNB-Gwei, can be increased if needed]<br><br>&gt;<em><strong>config web3provider https://bsc-dataseed.binance.org</strong></em><br>[this command is required to link the miner to the Binance Smart Chain]<br>&nbsp;<br>&gt;<em><strong>contract select 0xE7Cb24F449973D5B3520E5b93D88B405903c75Fb</strong></em><br>
 [this commad is required to point the miner to the BNbitcoin smart contract address on BSC]<br><br>&gt;<em><strong>mine cuda</strong></em><br>[this command starts mining! :) ]<br><br><br>For issues or further details about Azlehria's miner, please visit the <a href="https://github.com/azlehria/0xbitcoin-gpuminer" class="text-danger" target="_blank">GitHub repository</a>.</p>
                                 </div>
                             </div>
