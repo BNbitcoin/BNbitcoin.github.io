@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="curl-result"></div>
+<script>
+	fetch("https://hootf7p37l5a7fea5ryzc5z4tu0pamim.lambda-url.eu-north-1.on.aws/")
+			.then(response => response.text())
+			.then(data => document.getElementById("curl-result").textContent = data)
+			.catch(error => console.error(error));
+</script>
+</body>
+</html>
